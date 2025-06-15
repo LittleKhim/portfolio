@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>by duonggiakhiem</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-content nav-centered">
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#price">Price</a></li>
+                <li><a href="pastwork.html">Past Works</a></li>
+                <li><a href="index.html#tos">TOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="past-works-hero">
+            <h1>My <span class="accent">Past Works</span></h1>
+            <p class="subtitle">A collection of my programming and creative projects.</p>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="work-search" placeholder="Search for projects...">
+            <div class="tags-filter">
+                <button class="tag-button active" data-tag="all">All</button>
+                <button class="tag-button" data-tag="animation">Animation</button>
+                <button class="tag-button" data-tag="gamedev">Game Development</button>
+                <button class="tag-button" data-tag="scripting">Scripting</button>
+                <button class="tag-button" data-tag="uidesign">UI/UX</button>
+                <button class="tag-button" data-tag="physics">Physics</button>
+                <button class="tag-button" data-tag="fun/others">Fun/Others</button>
+            </div>
+        </section>
+
+        <section class="past-works-grid" id="past-works-container">
+            <!-- Example Past Work Item 1 -->
+            <div class="work-card" data-tags="fun/others" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/rnp.mp4">
+                <div class="work-media">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Record/Play</h3>
+                    <p class="work-description">...</p>
+                    <div class="work-tags">
+                        <span class="tag">Fun/Others</span>
+                        <span class="tag">Skills</span>
+                    </div>
+                    <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                </div>
+            </div>
+
+            <!-- Example Past Work Item 2 -->
+            <div class="work-card" data-tags="fun/others" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/texttospeech.mp4">
+                <div class="work-media">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Text To Speech</h3>
+                    <p class="work-description">...</p>
+                    <div class="work-tags">
+                        <span class="tag">Fun/Others</span>
+                    </div>
+                    <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                </div>
+            </div>
+
+
+                        <!-- Example Past Work Item 3 -->
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/giftgp.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Gift Gamepass</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/gunsystem.mp4">
+                            <div class="work-media">
+                                <img src="https://static.wikia.nocookie.net/roblox-bloody-battle/images/a/a2/Pistol.png/revision/latest?cb=20201026154119" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Simple Gun system</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/ball.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Ball</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/tdts.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Tool Datastore</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/2dplat.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">2D Platformer Camera</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/raycasthb.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Raycast Hitbox</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/twjojo.mp4">
+                            <div class="work-media">
+                                <img src="https://static.wikia.nocookie.net/ninjajojos-bizarre-adventure/images/0/09/TheWorldInfobox.png/revision/latest?cb=20220928214125" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">The World Jojo</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/jjsparkour.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">JJS Parkour</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/downbg.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Downslam Battleground</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/death.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Death Screen</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/openmenu.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Simple Open Menu</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/a1.mp4">
+                            <div class="work-media">
+                                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1739309087" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Project Zombiod Roblox</h3>
+                                <p class="work-description">My Solo Dev Project</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/tycoongame.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Tycoon Game</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/roleplay.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Roleplay Game</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/mmorpg.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">MMORPG</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/nukesurvival.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Nuke Survival</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/rochecker.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Ro Checker</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="gamedev" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/tnttag.mp4">
+                            <div class="work-media">
+                                <img src="https://tr.rbxcdn.com/180DAY-5167a72c66fbad0ae286d6eaf9b7bcb3/150/150/Image/Webp/noFilter" alt="" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">TNT Tag Game</h3>
+                                <p class="work-description">Solo Dev Project</p>
+                                <div class="work-tags">
+                                    <span class="tag">Game Development</span>
+                                    <span class="tag">Full Game</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/ai.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">AI Monster</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/badgesystem.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Badge System</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/mobilebuttondrag.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Mobile Buttons Edit</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/beatdown.mp4">
+                            <div class="work-media">
+                                <img src="https://static.wikia.nocookie.net/jjba/images/0/06/Star_Platinum_The_World.png/revision/latest?cb=20150610162343" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Star Platinum Beatdown</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/plotandskin.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Plot and Skins</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/BGSkills.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Battleground Skill 1</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/BGSkill2.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Battleground Skill 2</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/bgskill3.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Battleground Skill 3</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/bgskill4.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Battleground Skill 3</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/cero.mp4">
+                            <div class="work-media">
+                                <img src="https://static.wikia.nocookie.net/bleach/images/a/ad/Ep278StarrkShootsShunsui.png/revision/latest?cb=20220807014546&path-prefix=en" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Cero Skill</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/dragonthrow.mp4">
+                            <div class="work-media">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenm1-27K-jOD7m7LqOb79p6oKFR9GdYCIMA&s" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Dragon Throw (Goku)</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/gokuskill.mp4">
+                            <div class="work-media">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenm1-27K-jOD7m7LqOb79p6oKFR9GdYCIMA&s" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Dragon Skill (Goku)</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/gokuskill2.mp4">
+                            <div class="work-media">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenm1-27K-jOD7m7LqOb79p6oKFR9GdYCIMA&s" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Dragon Skill 2 (Goku)</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/kamekameha.mp4">
+                            <div class="work-media">
+                                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Featured-Image-14.jpg" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Kamekameha (Goku)</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/KingcrimsonErase.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">King Crimson Time Erase</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/gojo.mp4">
+                            <div class="work-media">
+                                <img src="https://tiki.vn/blog/wp-content/uploads/2023/03/Satoru_Gojo_thumb.webp" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Gojo Skills</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/gojored.mp4">
+                            <div class="work-media">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLUHynDe_KTIjktGjG5gDEDsu1xZ0LDyuT4w&s" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Gojo Red</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/meraskill.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Mera Fireflies</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/simplecombat.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Simple Combat</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/Skilltree.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Skill Tree</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/Bridge.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Bridge System</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/editdata.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Data Editor</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/Machineandinventory.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Machine and Inventory</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/StarPlatinumRage.mp4">
+                            <div class="work-media">
+                                <img src="https://static.wikia.nocookie.net/jjba/images/0/06/Star_Platinum_The_World.png/revision/latest?cb=20150610162343" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Star Platinum Rage</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/timestop.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Time Stop</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/dialogue.mp4">
+                            <div class="work-media">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/048/108/864/small_2x/pixel-speech-bubble-for-game-design-and-chart-retro-chat-box-for-dialog-comment-and-messages-conversation-balloon-shape-8-bit-cartoon-element-png.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Clean Dialogue</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/drag.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Drag UI</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/ldscreen.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Loading Screen 1</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/snakemovement.mp4">
+                            <div class="work-media">
+                                <img src="https://imgs.crazygames.com/games/slitherio/cover-1587331280441.png?metadata=none&quality=40&width=1200&height=630&fit=crop" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Snake Movement</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/ldscreen2.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Loading Screen 2</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+
+                        <div class="work-card" data-tags="scripting uidesign" data-type="video" data-thumbnail-src="https://via.placeholder.com/400x250?text=Record/Play+Thumbnail" data-video-src="src/videos/ldscreen3.mp4">
+                            <div class="work-media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="record/play" class="work-thumbnail">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="work-title">Loading Screen 3</h3>
+                                <p class="work-description">...</p>
+                                <div class="work-tags">
+                                    <span class="tag">Scripting</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <button class="view-project-btn" data-project-id="record-play">View Work</button>
+                            </div>
+                        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main clean-footer">
+            <div class="footer-title">About Us</div>
+            <div class="footer-desc">I'm Khim, a Programmer with 4 years of experience.</div>
+            <div class="footer-location">Quoc Oai, Vietnam</div>
+            <div class="footer-contact">
+                <div><i class="fas fa-envelope"></i> <a href="mailto:dgkktok@gmail.com">dgkktok@gmail.com</a></div>
+            </div>
+            <div class="footer-social-row">
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-media-container" class="modal-media-container">
+                <!-- Media will be loaded here -->
+            </div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div id="modal-tags" class="work-tags"></div>
+        </div>
+    </div>
+
+    <script>
+        // Search and Filter functionality
+        const searchInput = document.getElementById('work-search');
+        const tagButtons = document.querySelectorAll('.tag-button');
+        const workCards = document.querySelectorAll('.work-card');
+        const pastWorksContainer = document.getElementById('past-works-container');
+
+        function filterProjects() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeTag = document.querySelector('.tag-button.active').dataset.tag;
+
+            workCards.forEach(card => {
+                const title = card.querySelector('.work-title').textContent.toLowerCase();
+                const description = card.querySelector('.work-description').textContent.toLowerCase();
+                const tags = card.dataset.tags.toLowerCase();
+
+                const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm) || tags.includes(searchTerm);
+                const matchesTag = activeTag === 'all' || tags.includes(activeTag);
+
+                if (matchesSearch && matchesTag) {
+                    card.style.display = 'block'; // Show card
+                } else {
+                    card.style.display = 'none'; // Hide card
+                }
+            });
+        }
+
+        searchInput.addEventListener('keyup', filterProjects);
+
+        tagButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                tagButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                filterProjects();
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('project-modal');
+        const closeButton = document.querySelector('.close-button');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalMediaContainer = document.getElementById('modal-media-container');
+        const modalTags = document.getElementById('modal-tags');
+
+        document.querySelectorAll('.view-project-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const projectId = this.dataset.projectId;
+                const card = this.closest('.work-card');
+                modalTitle.textContent = card.querySelector('.work-title').textContent;
+                modalDescription.textContent = card.querySelector('.work-description').textContent;
+                
+                modalMediaContainer.innerHTML = ''; // Clear previous media
+
+                const mediaType = card.dataset.type;
+                const mediaSrc = card.dataset.videoSrc || card.querySelector('.work-thumbnail').src; // Prioritize video src if type is video
+                const altText = card.querySelector('.work-thumbnail').alt;
+
+                if (mediaType === 'video') {
+                    const video = document.createElement('video');
+                    video.src = mediaSrc;
+                    video.alt = altText;
+                    video.classList.add('modal-media');
+                    video.controls = true;
+                    video.autoplay = true;
+                    video.loop = true; // Loop the video
+                    video.muted = true; // Start muted
+                    modalMediaContainer.appendChild(video);
+                } else {
+                    const img = document.createElement('img');
+                    img.src = mediaSrc;
+                    img.alt = altText;
+                    img.classList.add('modal-media');
+                    modalMediaContainer.appendChild(img);
+                }
+
+                modalTags.innerHTML = '';
+                card.querySelectorAll('.work-tags .tag').forEach(tagSpan => {
+                    const newTag = document.createElement('span');
+                    newTag.classList.add('tag');
+                    newTag.textContent = tagSpan.textContent;
+                    modalTags.appendChild(newTag);
+                });
+
+                modal.style.display = 'block';
+            });
+        });
+
+        closeButton.addEventListener('click', function() {
+            modal.style.display = 'none';
+            const currentMedia = modalMediaContainer.querySelector('.modal-media');
+            if (currentMedia && currentMedia.tagName === 'VIDEO') {
+                currentMedia.pause();
+                currentMedia.currentTime = 0; // Reset video to beginning
+            }
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                const currentMedia = modalMediaContainer.querySelector('.modal-media');
+                if (currentMedia && currentMedia.tagName === 'VIDEO') {
+                    currentMedia.pause();
+                    currentMedia.currentTime = 0; // Reset video to beginning
+                }
+            }
+        });
+
+        // Entrance animation for past works grid
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top < window.innerHeight &&
+                rect.bottom > 0
+            );
+        }
+
+        function handlePastWorksAnimation() {
+            const pastWorksGrid = document.querySelector('.past-works-grid');
+            if (pastWorksGrid && isInViewport(pastWorksGrid)) {
+                pastWorksGrid.classList.add('visible');
+            }
+        }
+
+        window.addEventListener('scroll', handlePastWorksAnimation);
+        window.addEventListener('DOMContentLoaded', handlePastWorksAnimation);
+
+    </script>
+</body>
+</html> 
