@@ -1,6 +1,6 @@
 // Discord OAuth2 Configuration
 const DISCORD_CLIENT_ID = '1383884204634275941';
-const REDIRECT_URI = "https://www.littlekhim.online/auth/callback";
+const REDIRECT_URI = "https://www.littlekhim.online/api/auth/callback";
 const DISCORD_AUTH_URL = `https://discord.com/api/oauth2/authorize?client_id=${DISCORD_CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=identify%20email`;
 
 const loginBtn = document.getElementById('login-btn');
