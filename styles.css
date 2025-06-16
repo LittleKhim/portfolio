@@ -99,15 +99,11 @@ nav {
 }
 
 .login-btn {
-    position: absolute;
-    right: -80px; /* Adjust as needed for spacing */
-    top: 45%;
-    transform: translateY(-50%);
     background: #232323; /* Black background */
     color: #eaeaea;
     box-shadow: 4px 4px 8px var(--shadow-dark),
                 -4px -4px 8px var(--shadow-light);
-    border: 2px solid var(--accent-color); /* Red outline (using accent color) */
+    border: 2px solid var(--accent-color); /* Red outline */
     padding: 0.7rem 1rem;
     border-radius: 2rem;
     font-size: 1.15rem;
@@ -118,6 +114,7 @@ nav {
     gap: 0.5rem;
     transition: all 0.3s ease;
     z-index: 101;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .login-btn:hover {
@@ -129,13 +126,77 @@ nav {
     font-size: 1.1rem;
 }
 
+#login-btn,
+.user-menu {
+    position: absolute;
+    right: -80px;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 101;
+}
+
 @media (max-width: 900px) {
-    .login-btn {
-        right: 1.5rem;
-        top: 1.5rem;
-        position: fixed;
-        transform: none;
+    .nav-content.nav-centered {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+        max-width: 100%;
     }
+    #login-btn,
+    .user-menu {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: fit-content;
+        margin-top: 1rem;
+    }
+}
+
+.user-menu {
+    display: none;
+}
+
+.user-menu-btn {
+}
+
+.user-dropdown {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background:#232323;
+    border:2px solid #d13f3f;
+    border-radius:1rem;
+    min-width:160px;
+    z-index:200;
+    box-shadow:0 4px 16px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    padding:10px 18px;
+    font-size:0.98em;
+    cursor:pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#dropdown-credits {
+    color:#e69999;
+    cursor: default;
+}
+
+#dropdown-settings {
+    color:#eaeaea;
+}
+
+#dropdown-logout {
+    color:var(--accent-color);
 }
 
 main {
