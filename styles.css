@@ -53,6 +53,10 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 0;
+<<<<<<< HEAD
+    position: relative;
+=======
+>>>>>>> b28a2df138ee35632724be6efc3574fc905c785c
 }
 
 .logo, .order-btn {
@@ -64,7 +68,11 @@ nav {
     gap: 2.2rem;
     background: var(--bg-color);
     border-radius: 2rem;
+<<<<<<< HEAD
+    padding: .7rem 1.2rem;
+=======
     padding: 1rem 1.2rem;
+>>>>>>> b28a2df138ee35632724be6efc3574fc905c785c
     box-shadow: 2px 2px 8px var(--shadow-dark),
                 -2px -2px 8px var(--shadow-light);
     border: 2px solid var(--accent-color);
@@ -97,6 +105,49 @@ nav {
     color: var(--text-color);
 }
 
+<<<<<<< HEAD
+.login-btn {
+    position: absolute;
+    right: -80px; /* Adjust as needed for spacing */
+    top: 45%;
+    transform: translateY(-50%);
+    background: #232323;
+    color: #eaeaea;
+    box-shadow: 4px 4px 8px var(--shadow-dark),
+                -4px -4px 8px var(--shadow-light);
+    border: 2px solid var(--accent-color);
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    z-index: 101;
+}
+
+.login-btn:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.login-btn i {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+    .login-btn {
+        right: 1.5rem;
+        top: 1.5rem;
+        position: fixed;
+        transform: none;
+    }
+}
+
+=======
+>>>>>>> b28a2df138ee35632724be6efc3574fc905c785c
 main {
     padding-top: 120px;
     max-width: 1200px;
