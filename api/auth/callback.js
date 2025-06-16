@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID;
 const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET;
-const REDIRECT_URI = 'https://www.littlekhim.online/api/auth/callback';
+const REDIRECT_URI = "https://www.littlekhim.online/api/auth/callback";
 
 function setCookie(res, name, value, options = {}) {
   let cookie = `${name}=${value}`;
