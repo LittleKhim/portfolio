@@ -103,11 +103,11 @@ nav {
     right: -80px; /* Adjust as needed for spacing */
     top: 45%;
     transform: translateY(-50%);
-    background: #232323;
+    background: #232323; /* Black background */
     color: #eaeaea;
     box-shadow: 4px 4px 8px var(--shadow-dark),
                 -4px -4px 8px var(--shadow-light);
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color); /* Red outline (using accent color) */
     padding: 0.7rem 1rem;
     border-radius: 2rem;
     font-size: 1.15rem;
