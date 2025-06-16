@@ -4,43 +4,52 @@ const REDIRECT_URI = "https://www.littlekhim.online/api/auth/callback";
 const DISCORD_AUTH_URL = `https://discord.com/api/oauth2/authorize?client_id=${DISCORD_CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=identify%20email`;
 
 const loginBtn = document.getElementById('login-btn');
-const userInfo = document.getElementById('user-info');
-const discordUsername = document.getElementById('discord-username');
-const userCredits = document.getElementById('user-credits');
+const userMenu = document.getElementById('user-menu');
+const userMenuBtn = document.getElementById('user-menu-btn');
+const userMenuUsername = document.getElementById('user-menu-username');
+const userDropdown = document.getElementById('user-dropdown');
+const dropdownCreditsValue = document.getElementById('dropdown-credits-value');
+const dropdownLogout = document.getElementById('dropdown-logout');
+const dropdownSettings = document.getElementById('dropdown-settings');
 
 // Display user info
 function showLoggedIn(username, credits) {
     loginBtn.style.display = 'none';
-    userInfo.style.display = 'block';
-    discordUsername.textContent = username;
-    userCredits.textContent = credits;
-
-    // Add logout button
-    if (!document.getElementById('logout-btn')) {
-        const logoutBtn = document.createElement('button');
-        logoutBtn.id = 'logout-btn';
-        logoutBtn.textContent = 'Logout';
-        logoutBtn.className = 'login-btn';
-        logoutBtn.style.marginLeft = '10px';
-        logoutBtn.onclick = async () => {
-            await fetch('/api/auth/logout');
-            window.location.href = '/'; // return to homepage on logout
-        };
-        userInfo.appendChild(logoutBtn);
-    }
+    userMenu.style.display = 'block';
+    userMenuUsername.textContent = username;
+    dropdownCreditsValue.textContent = credits;
 }
 
 // Hide user info
 function showLoggedOut() {
     loginBtn.style.display = 'inline-flex';
-    userInfo.style.display = 'none';
-    const logoutBtn = document.getElementById('logout-btn');
-    if (logoutBtn) logoutBtn.remove();
+    userMenu.style.display = 'none';
+    userDropdown.style.display = 'none';
 }
 
 // Handle login button click
 loginBtn.addEventListener('click', () => {
     window.location.href = DISCORD_AUTH_URL;
+});
+
+userMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+dropdownLogout.addEventListener('click', async () => {
+    await fetch('/api/auth/logout');
+    window.location.reload();
+});
+
+dropdownSettings.addEventListener('click', () => {
+    alert('Settings page coming soon!');
+});
+
+document.addEventListener('click', (e) => {
+    if (userDropdown.style.display === 'block') {
+        userDropdown.style.display = 'none';
+    }
 });
 
 // Detect /auth/callback route
